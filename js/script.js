@@ -49,7 +49,7 @@ const material = new THREE.MeshNormalMaterial(
 
 
 const cube = new THREE.Mesh( geometry, material );
-cube.position.y = geometry.parametera.innerHeight/2;
+cube.position.y = geometry.parameters.innerHeight/2;
 scene.add( cube );
 
 function animate() 
