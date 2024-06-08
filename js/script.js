@@ -43,7 +43,9 @@ scene.visable = false;
 const geometry = new THREE.CubeGeometry( 1, 1, 1 );
 const material = new THREE.MeshNormalMaterial(
 {
-
+    transparent: true,
+    opacity:0.5,
+    side: THREE.DoubleSide
 });
 
 
