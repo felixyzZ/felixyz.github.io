@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <head>
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-	<title>Hello, world!</title>
-  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> -->
+	<!-- <title>Hello, world!</title> -->
+
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <!-- <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script> -->
+  
+  <script src="https://raw.githack.com/AR-js-org/AR.js/dev/aframe/build/aframe-ar.js"></script>
+
+  <!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
+
+
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -13,7 +19,7 @@
     <a-marker preset='hiro'>
       <!--Adding a glTF 2.0 model to your scene-->
       <a-entity 
-       gltf-model-next="src: url(/models/test2.gltf);"
+       gltf-model-next="src: url(../models/test2.gltf);"
       >
       </a-entity>
       
