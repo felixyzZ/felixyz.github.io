@@ -126,7 +126,7 @@ function initialize()
 	function onError(xhr) { console.log( 'An error happened' ); }
 	
 	new THREE.MTLLoader()
-		.setPath( 'models/' )
+		.setPath( 'models/fish/' )
 		.load( 'fish-2.mtl', function ( materials ) {
 			materials.preload();
 			new THREE.OBJLoader()
