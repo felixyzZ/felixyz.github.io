@@ -6,12 +6,25 @@
   <body style="margin : 0px; overflow: hidden;">
       <a-scene embedded arjs>
       <a-marker preset="hiro">
-          <a-entity
+         
+<!--         
+        <a-entity
           position="0 0 0"
           rotation="0 0 0"
           scale="0.05 0.05 0.05"
           gltf-model="../image-tracking/nft/trex/scene.gltf"
-          ></a-entity>
+          ></a-entity> -->
+
+          <a-scene>
+            <a-assets>
+              <a-asset-item id="tree-obj" src="/models/fish-2.obj"></a-asset-item>
+              <a-asset-item id="tree-mtl" src="/models/fish-2.mtl"></a-asset-item>
+            </a-assets>
+          
+            <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
+          </a-scene>
+
+
       </a-marker>
       <a-entity camera></a-entity>
       </a-scene>
