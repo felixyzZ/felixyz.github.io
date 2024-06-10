@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-        <a-marker preset="hiro">
+  <head>
+    <meta charset="utf-8">
+    <title>glTF Model</title>
+    <meta name="description" content="glTF Model - A-Frame">
+    <script src="../../../dist/aframe-master.js"></script>
+    <script src="play-all-model-animations.js"></script>
+  </head>
+  <body>
+    <a-scene stats>
+      <a-assets>
+        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+      </a-assets>
 
-          <a-entity
-            gltf-model="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf">
-          </a-entity>
-          
-        </a-marker>
-        <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+      <a-entity gltf-model="#cityModel" play-all-model-animations></a-entity>
+    </a-scene>
+  </body>
 </html>
-
-
 
 <!-- <!DOCTYPE html>
 <html lang="en">
