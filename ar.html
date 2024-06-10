@@ -6,19 +6,13 @@
 
   <body style="margin : 0px; overflow: hidden;">
       <a-scene embedded arjs>       
-
-        <!-- <a-marker-camera preset='custom' type='pattern' url='assets/qr.patt'></a-marker-camera> -->
+      
         <a-marker preset=’hiro’>
-
-          <a-scene>
-            <a-assets>
-              <a-asset-item id="tree-obj" src="/models/fish-2.obj"></a-asset-item>
-              <a-asset-item id="tree-mtl" src="/models/fish-2.mtl"></a-asset-item>
-            </a-assets>
-          
-            <!-- <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity> -->
-          </a-scene>
-
+          <!-- Adding an OBJ file to an AR Project-->
+          <a-entity 
+              obj-model=”obj: url(/models/fish-2.obj); 
+              mtl: url(/models/fish-2.mtl)”>
+          </a-entity>
 
       </a-marker>
       <a-entity camera></a-entity>
